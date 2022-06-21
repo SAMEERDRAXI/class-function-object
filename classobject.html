@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Classes</title>
+    <style type="text/css">
+    
+    table,tr,td,th {
+
+border: 1px solid black;
+font-size: 40px;
+text-align: center;
+padding: 20PX;
+margin: 40PX;
+color: solid black;
+background-color: lightblue;
+
+    }
+    h1{
+      text-align: center;
+      background-color: lightblue;
+    }
+
+  </style>
+<h1>The Class Function Table</h1>
+<center>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">STUDENT NAME</th>
+      <th scope="col">USN Number</th>
+      <th scope="col">PASSING YEAR</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td id="demo"></td>
+      <td id="demo1"></td>
+      <td id="demo2"></td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td id="demo3"></td>
+      <td id="demo4"></td>
+      <td id="demo5"></td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td id="demo6"></td>
+      <td id="demo7"></td>
+      <td id="demo8"></td>
+
+    </tr>
+     <tr>
+      <th scope="row">4</th>
+      <td id="demo9"></td>
+      <td id="demo10"></td>
+      <td id="demo11"></td>
+
+    </tr>
+     <tr>
+      <th scope="row">5</th>
+      <td id="demo12"></td>
+      <td id="demo13"></td>
+      <td id="demo14"></td>
+
+    </tr>
+     <tr>
+      <th scope="row">6</th>
+      <td id="demo15"></td>
+      <td id="demo16"></td>
+      <td id="demo17"></td>
+
+    </tr>
+     <tr>
+      <th scope="row">7</th>
+      <td id="demo18"></td>
+      <td id="demo19"></td>
+      <td id="demo20"></td>
+
+    </tr>
+     <tr>
+      <th scope="row">8</th>
+      <td id="demo21"></td>
+      <td id="demo22"></td>
+      <td id="demo23"></td>
+
+    </tr>
+     <tr>
+      <th scope="row">9</th>
+      <td id="demo24"></td>
+      <td id="demo25"></td>
+      <td id="demo26"></td>
+
+    </tr>
+
+       <tr>
+      <th scope="row">10</th>
+      <td id="demo27"></td>
+      <td id="demo28"></td>
+      <td id="demo29"></td>
+
+    </tr>
+
+  </tbody>
+</table>
+</center>
+
+
+</head>
+<body>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+
+
+
+<script type="text/javascript">
+  class students {
+    constructor (name,usn,year){
+      this.name = name;
+      this.usn = usn;
+      this.year = year;
+    }
+  }
+
+
+const stud1 = new students("Sameer Draxi", "2BL12ME080","2017");
+document.getElementById("demo").innerHTML =stud1.name; 
+document.getElementById("demo1").innerHTML = stud1.usn;
+document.getElementById("demo2").innerHTML = stud1.year;
+
+const stud2 = new students("Tousif sarwan", "2BL12A076","2018");
+document.getElementById("demo3").innerHTML =stud2.name; 
+document.getElementById("demo4").innerHTML = stud2.usn;
+document.getElementById("demo5").innerHTML = stud2.year;
+
+const stud3 = new students("Abdul Qadir", "2BL14CV046","2016");
+document.getElementById("demo6").innerHTML =stud3.name; 
+document.getElementById("demo7").innerHTML = stud3.usn;
+document.getElementById("demo8").innerHTML = stud3.year;
+
+const stud4 = new students("Amanullah Draxi", "2BL19CS047","2022");
+document.getElementById("demo9").innerHTML =stud4.name; 
+document.getElementById("demo10").innerHTML = stud4.usn;
+document.getElementById("demo11").innerHTML = stud4.year;
+
+const stud5 = new students("Hina Shah", "2BL12CS057","2017");
+document.getElementById("demo12").innerHTML =stud5.name; 
+document.getElementById("demo13").innerHTML = stud5.usn;
+document.getElementById("demo14").innerHTML = stud5.year;
+
+const stud6 = new students("Arwa Iraani", "2BL14EC420","2019");
+document.getElementById("demo15").innerHTML = stud6.name; 
+document.getElementById("demo16").innerHTML = stud6.usn;
+document.getElementById("demo17").innerHTML = stud6.year;
+
+const stud7 = new students("Seema Bilagi", "2BL15ME429","2018");
+document.getElementById("demo18").innerHTML = stud7.name; 
+document.getElementById("demo19").innerHTML = stud7.usn;
+document.getElementById("demo20").innerHTML = stud7.year;
+
+const stud8 = new students("Mahesh Goudar", "2BL17CV020","2021");
+document.getElementById("demo21").innerHTML = stud8.name; 
+document.getElementById("demo22").innerHTML = stud8.usn;
+document.getElementById("demo23").innerHTML = stud8.year;
+
+const stud9 = new students("Jasmin Bijapur", "2BL12A076IS048","2020");
+document.getElementById("demo24").innerHTML = stud9.name; 
+document.getElementById("demo25").innerHTML = stud9.usn;
+document.getElementById("demo26").innerHTML = stud9.year;
+
+const stud10 = new students("Ravi Biradar", "2BL13ME088","2017");
+document.getElementById("demo27").innerHTML = stud10.name; 
+document.getElementById("demo28").innerHTML = stud10.usn;
+document.getElementById("demo29").innerHTML = stud10.year;
+
+
+
+
+
+
+</script>
+  
+</body>
+</html>
